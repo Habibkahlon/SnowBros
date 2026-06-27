@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0e43c24d-b85f-4d6d-b0b4-b3ef1dce305d}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\SFML\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\SFML\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-network-d.lib;sfml-audio-d.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="HelpScreen.cpp" />
+    <ClCompile Include="BalloonMode.cpp" />
+    <ClCompile Include="DistanceIncrease.cpp" />
+    <ClCompile Include="LevelComplete.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="SnowballPower.cpp" />
+    <ClCompile Include="SpeedBoost.cpp" />
+    <ClCompile Include="Gem.cpp" />
+    <ClCompile Include="Leaderboard.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mainmenu.cpp" />
+    <ClCompile Include="ModeSelect.cpp" />
+    <ClCompile Include="PauseMenu.cpp" />
+    <ClCompile Include="Powerup.cpp" />
+    <ClCompile Include="Shop.cpp" />
+    <ClCompile Include="SnowBros.cpp" />
+    <ClCompile Include="Auth.cpp" />
+    <ClCompile Include="HitBox.cpp" />
+    <ClCompile Include="Platform.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="GamakichiBomb.cpp" />
+    <ClCompile Include="Gamakichi.cpp" />
+    <ClCompile Include="FlyingFoogaFoog.cpp" />
+    <ClCompile Include="StarPowerUp.cpp" />
+    <ClCompile Include="Tornado.cpp" />
+    <ClCompile Include="GamakichiCreature.cpp" />
+    <ClCompile Include="Knife.cpp" />
+    <ClCompile Include="LevelSelect.cpp" />
+    <ClCompile Include="Mogera.cpp" />
+    <ClCompile Include="MogeraChild.cpp" />
+    <ClCompile Include="Tom.cpp" />
+    <ClCompile Include="Projectile.cpp" />
+    <ClCompile Include="SnowBall.cpp" />
+    <ClCompile Include="SnowBallLauncher.cpp" />
+    <ClCompile Include="StatsComponent.cpp" />
+    <ClCompile Include="Botom.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Levels.cpp" />
+    <ClCompile Include="Nick.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LevelComplete.h" />
+    <ClInclude Include="HelpScreen.h" />
+    <ClInclude Include="Powers.h" />
+    <ClInclude Include="PowerUp.h" />
+    <ClInclude Include="Auth.h" />
+    <ClInclude Include="Gem.h" />
+    <ClInclude Include="Leaderboard.h" />
+    <ClInclude Include="PauseMenu.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="StarPowerUp.h" />
+    <ClInclude Include="Tornado.h" />
+    <ClInclude Include="Gamakichi.h" />
+    <ClInclude Include="GamakichiBomb.h" />
+    <ClInclude Include="MogeraChild.h" />
+    <ClInclude Include="FlyingFoogaFoog.h" />
+    <ClInclude Include="HitBox.h" />
+    <ClInclude Include="Platform.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Botom.h" />
+    <ClInclude Include="GamakichiCreature.h" />
+    <ClInclude Include="Knife.h" />
+    <ClInclude Include="LevelSelect.h" />
+    <ClInclude Include="Mogera.h" />
+    <ClInclude Include="Projectile.h" />
+    <ClInclude Include="SnowBall.h" />
+    <ClInclude Include="SnowBallLauncher.h" />
+    <ClInclude Include="StatsComponent.h" />
+    <ClInclude Include="Tom.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Nick.h" />
+    <ClInclude Include="Levels.h" />
+    <ClInclude Include="Mainmenu.h" />
+    <ClInclude Include="ModeSelect.h" />
+    <ClInclude Include="Shop.h" />
+    <ClInclude Include="SnowBros.h" />
+    <ClInclude Include="User.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

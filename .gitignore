@@ -1,0 +1,19 @@
+# Visual Studio build output
+x64/
+Debug/
+Release/
+*.obj
+*.ilk
+*.pdb
+*.idb
+*.exe
+*.log
+*.tlog
+*.recipe
+
+# Visual Studio user-specific files
+*.vcxproj.user
+.vs/
+
+# Runtime save data (auto-generated on first run)
+users.txt
